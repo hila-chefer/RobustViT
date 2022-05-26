@@ -72,13 +72,15 @@ Our ImageNet finetuning code is based on [code from the official PyTorch repo](h
 ## Baseline methods
 Notice to uncomment the import line containing the pretrained model you wish to finetune in the code.
 
-1. GradMask: run: 
+### GradMask
+Run the following command: 
 ```bash
 python imagenet_finetune_gradmask.py --seg_data <PATH_TO_SEGMENTATION_DATA> --data <PATH_TO_IMAGENET> --gpu 0  --lr <LR> --lambda_seg <SEG> --lambda_acc <ACC>
 ```
 All hyperparameters for the different models can be found in section D of the supplementary material.
 
-1. Right for the Right Reasons: run: 
+### Right for the Right Reasons
+Run the following command: 
 ```bash
 python imagenet_finetune_rrr.py --seg_data <PATH_TO_SEGMENTATION_DATA> --data <PATH_TO_IMAGENET> --gpu 0  --lr <LR> --lambda_seg <SEG> --lambda_acc <ACC>
 ```
