@@ -112,7 +112,8 @@ python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-s
 Our segmentation tests are based on the test in the official implementation of [Transformer Interpretability Beyond Attention Visualization](https://github.com/hila-chefer/Transformer-Explainability).
 1. [Download the ImageNet segmentation test set](https://github.com/hila-chefer/Transformer-Explainability#section-a-segmentation-results).
 2. Run the following script to evaluate:
- Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
+ 
  ```bash
 PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagenet-seg-path <PATH_TO_gtsegs_ijcv.mat>
 ```
+* Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
