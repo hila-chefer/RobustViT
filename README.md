@@ -105,7 +105,7 @@ python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-s
 * To evaluate the original model simply omit the `checkpoint` parameter.
 * For the INet-v2 dataset add `--isV2`.
 * For the ObjectNet dataset add `--isObjectNet`.
-* For the SI datasets add `isSI`.
+* For the SI datasets add `--isSI`.
 
 ### Segmentation Evaluation
 Our segmentation tests are based on the test in the official implementation of [Transformer Interpretability Beyond Attention Visualization](https://github.com/hila-chefer/Transformer-Explainability).
