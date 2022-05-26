@@ -26,7 +26,7 @@ To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https:
    python tokencut_generate_segmentation.py --img_path <PATH_TO_IMAGE> --out_dir <PATH_TO_OUTPUT_DIRECTORY>    
    ```
 
-The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thanks those authors for their great works. 
+The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thank those authors for their great works. 
 
 [Project page](https://www.m-psi.fr/Papers/TokenCut2022/)
 
