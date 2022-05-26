@@ -98,12 +98,11 @@ All hyperparameters for the different models can be found in section D of the su
     * [SI-Score](https://github.com/google-research/si-score)
 
 2. Run the following script to evaluate:
-Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
  
 ```bash
 python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-size <BATCH_SIZE> --evaluate --checkpoint <PATH_TO_FINETUNED_CHECKPOINT>
 ```
-
+* Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
 * To evaluate the original model simply omit the `checkpoint` parameter.
 * For the INet-v2 dataset add `--isV2`.
 * For the ObjectNet dataset add `--isObjectNet`.
