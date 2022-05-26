@@ -38,7 +38,7 @@ The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [D
 
 ## Finetuning ViT models
 
-To finetune a pretrained ViT model use the `imagenet_finetune.py` script. Notice to uncomment the pretrained model you 
+To finetune a pretrained ViT model use the `imagenet_finetune.py` script. Notice to uncomment the import line containing the pretrained model you 
 wish to finetune.
 
 Usage example:
@@ -70,7 +70,7 @@ Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman
 Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
 
 ## Baseline methods
-Notice to uncomment the pretrained model you wish to finetune in the code.
+Notice to uncomment the import line containing the pretrained model you wish to finetune in the code.
 
 1. GradMask: run: 
 ```bash
@@ -96,7 +96,7 @@ All hyperparameters for the different models can be found in section D of the su
     * [SI-Score](https://github.com/google-research/si-score)
 
 2. Run the following script to evaluate:
-Notice to uncomment the pretrained model you wish to evaluate in the code.
+Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
  
 ```bash
 python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-size <BATCH_SIZE> --evaluate --checkpoint <PATH_TO_FINETUNED_CHECKPOINT>
@@ -111,7 +111,7 @@ python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-s
 Our segmentation tests are based on the test in the official implementation of [Transformer Interpretability Beyond Attention Visualization](https://github.com/hila-chefer/Transformer-Explainability).
 1. [Download the ImageNet segmentation test set](https://github.com/hila-chefer/Transformer-Explainability#section-a-segmentation-results).
 2. Run the following script to evaluate:
- Notice to uncomment the pretrained model you wish to evaluate in the code.
+ Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
  ```bash
 PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagenet-seg-path <PATH_TO_gtsegs_ijcv.mat>
 ```
