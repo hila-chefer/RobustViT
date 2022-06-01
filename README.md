@@ -26,7 +26,7 @@ To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https:
    python tokencut_generate_segmentation.py --img_path <PATH_TO_IMAGE> --out_dir <PATH_TO_OUTPUT_DIRECTORY>    
    ```
 
-The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thanks those authors for their great works. 
+The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thank those authors for their great works. 
 
 [Project page](https://www.m-psi.fr/Papers/TokenCut2022/)
 
@@ -38,7 +38,7 @@ The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [D
 
 ## Finetuning ViT models
 
-To finetune a pretrained ViT model use the `imagenet_finetune.py` script. Notice to uncomment the pretrained model you 
+To finetune a pretrained ViT model use the `imagenet_finetune.py` script. Notice to uncomment the import line containing the pretrained model you 
 wish to finetune.
 
 Usage example:
@@ -70,15 +70,17 @@ Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman
 Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
 
 ## Baseline methods
-Notice to uncomment the pretrained model you wish to finetune in the code.
+Notice to uncomment the import line containing the pretrained model you wish to finetune in the code.
 
-1. GradMask: run: 
+### GradMask
+Run the following command: 
 ```bash
 python imagenet_finetune_gradmask.py --seg_data <PATH_TO_SEGMENTATION_DATA> --data <PATH_TO_IMAGENET> --gpu 0  --lr <LR> --lambda_seg <SEG> --lambda_acc <ACC>
 ```
 All hyperparameters for the different models can be found in section D of the supplementary material.
 
-1. Right for the Right Reasons: run: 
+### Right for the Right Reasons
+Run the following command: 
 ```bash
 python imagenet_finetune_rrr.py --seg_data <PATH_TO_SEGMENTATION_DATA> --data <PATH_TO_IMAGENET> --gpu 0  --lr <LR> --lambda_seg <SEG> --lambda_acc <ACC>
 ```
@@ -96,22 +98,22 @@ All hyperparameters for the different models can be found in section D of the su
     * [SI-Score](https://github.com/google-research/si-score)
 
 2. Run the following script to evaluate:
-Notice to uncomment the pretrained model you wish to evaluate in the code.
  
 ```bash
 python imagenet_eval_robustness.py --data <PATH_TO_ROBUSTNESS_DATASET> --batch-size <BATCH_SIZE> --evaluate --checkpoint <PATH_TO_FINETUNED_CHECKPOINT>
 ```
-
+* Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
 * To evaluate the original model simply omit the `checkpoint` parameter.
 * For the INet-v2 dataset add `--isV2`.
 * For the ObjectNet dataset add `--isObjectNet`.
-* For the SI datasets add `isSI`.
+* For the SI datasets add `--isSI`.
 
 ### Segmentation Evaluation
 Our segmentation tests are based on the test in the official implementation of [Transformer Interpretability Beyond Attention Visualization](https://github.com/hila-chefer/Transformer-Explainability).
 1. [Download the ImageNet segmentation test set](https://github.com/hila-chefer/Transformer-Explainability#section-a-segmentation-results).
 2. Run the following script to evaluate:
- Notice to uncomment the pretrained model you wish to evaluate in the code.
+ 
  ```bash
 PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagenet-seg-path <PATH_TO_gtsegs_ijcv.mat>
 ```
+* Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
