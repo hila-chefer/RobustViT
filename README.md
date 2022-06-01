@@ -1,6 +1,6 @@
 # RobustViT
 
-PyTorch implementation of **Optimizing Relevance Maps of Vision Transformers Improves Robustness**. This code allows to 
+Official PyTorch implementation of **Optimizing Relevance Maps of Vision Transformers Improves Robustness**. This code allows to 
 finetune the explainability maps of Vision Transformers to enhance robustness. 
 
 ## Producing Segmenataion Data
@@ -107,8 +107,8 @@ PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagen
 * Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
 
 ### Credits
-The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). 
-Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) repository. We thank Ross Wightman for the great resource.
-Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
+* The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). 
+* Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) repository.
+* Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
 
 We would like to sincerely thank the authors for their great works. 
