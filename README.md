@@ -26,15 +26,6 @@ To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https:
    python tokencut_generate_segmentation.py --img_path <PATH_TO_IMAGE> --out_dir <PATH_TO_OUTPUT_DIRECTORY>    
    ```
 
-The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thank those authors for their great works. 
-
-[Project page](https://www.m-psi.fr/Papers/TokenCut2022/)
-
-[Paper](https://arxiv.org/pdf/2202.11539.pdf)
-
-[![Colab demo](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YangtaoWANG95/TokenCut/blob/master/inference_demo.ipynb)
-[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/akhaliq/TokenCut)
-
 
 ## Finetuning ViT models
 
@@ -117,3 +108,6 @@ Our segmentation tests are based on the test in the official implementation of [
 PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagenet-seg-path <PATH_TO_gtsegs_ijcv.mat>
 ```
 * Notice to uncomment the import line containing the pretrained model you wish to evaluate in the code.
+
+### Credits
+The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [DINO](https://github.com/facebookresearch/dino), [Segswap](https://github.com/XiSHEN0220/SegSwap), and [Bilateral_Sovlver](https://github.com/poolio/bilateral_solver). We would like to sincerely thank those authors for their great works. 
