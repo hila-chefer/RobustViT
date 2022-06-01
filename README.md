@@ -111,4 +111,4 @@ The TokenCut code is built on top of [LOST](https://github.com/valeoai/LOST), [D
 Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) repository. We thank Ross Wightman for the great resource.
 Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
 
-We would like to sincerely thank those authors for their great works. 
+We would like to sincerely thank the authors for their great works. 
