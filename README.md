@@ -1,6 +1,6 @@
 # RobustViT
 
-PyTorch implementation of **Optimizing Relevance Maps of Vision Transformers Improves Robustness**. This code allows to 
+Official PyTorch implementation of **Optimizing Relevance Maps of Vision Transformers Improves Robustness**. This code allows to 
 finetune the explainability maps of Vision Transformers to enhance robustness. 
 
 ## Producing Segmenataion Data
