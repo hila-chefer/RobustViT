@@ -11,6 +11,15 @@ The method employs loss functions directly to the explainability maps to ensure 
 </p>
 Using a short finetuning process with only 3 labeled examples from 500 classes, our method imrpoves robustness of ViT models across different model sizes and training techniques, even when data augmentations/ regularization are applied.
 
+## Model zoo
+Below are links to download finetuned models for the base models of [ViT AugReg](https://arxiv.org/abs/2106.10270) (this is also the model that appears on [timm](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py)), vanilla ViT, and DeiT. 
+These are also the weights used in our [colab notebook](https://colab.research.google.com/github/hila-chefer/RobustViT/blob/master/RobustViT.ipynb).
+| Path | Description
+| :--- | :----------
+|[AugReg-B](https://drive.google.com/file/d/1jbWiuBrL4sKpAjG3x4oGbs3WOC2UdbIb/view?usp=sharing) | Finetuned ViT Augreg base model.
+|[ViT-B](https://drive.google.com/file/d/1vDmuvbdLbYVAqWz6yVM4vT1Wdzt8KV-g/view?usp=sharing) | Finetuned vanilla ViT base model.
+|[DeiT-B](https://drive.google.com/file/d/1DHKX_s8rVCDiX4pwnuCCZdGWsOl4SFMn/view?usp=sharing)| Finetuned DeiT base model.
+
 ## Producing Segmenataion Data
 ### Using ImageNet-S
 To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https://github.com/UnsupervisedSemanticSegmentation/ImageNet-S)
