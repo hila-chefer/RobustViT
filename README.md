@@ -1,7 +1,13 @@
 # RobustViT
 
 Official PyTorch implementation of **Optimizing Relevance Maps of Vision Transformers Improves Robustness**. This code allows to 
-finetune the explainability maps of Vision Transformers to enhance robustness. 
+finetune the explainability maps of Vision Transformers to enhance robustness.
+
+The method employs loss functions directly to the explainability maps to ensure that the model is focused mostly on the foreground of the image:
+<p align="center">
+  <img width="500" height="400" src="teaser.png">
+</p>
+Using a short finetuning process with only 3 labeled examples from 500 classes, our method imrpoves robustness of ViT models across different model sizes and training techniques, even when data augmentations\ regularization are applied.
 
 ## Producing Segmenataion Data
 ### Using ImageNet-S
