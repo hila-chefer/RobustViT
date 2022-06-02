@@ -7,7 +7,7 @@ The method employs loss functions directly to the explainability maps to ensure 
 <p align="center">
   <img width="500" height="400" src="teaser.png">
 </p>
-Using a short finetuning process with only 3 labeled examples from 500 classes, our method imrpoves robustness of ViT models across different model sizes and training techniques, even when data augmentations\ regularization are applied.
+Using a short finetuning process with only 3 labeled examples from 500 classes, our method imrpoves robustness of ViT models across different model sizes and training techniques, even when data augmentations/ regularization are applied.
 
 ## Producing Segmenataion Data
 ### Using ImageNet-S
