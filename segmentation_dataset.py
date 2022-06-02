@@ -66,10 +66,10 @@ class SegmentationDataset(ImageFolder):
             random.seed(seed)
             random.shuffle(self._tag_list)
         if partition == TRAIN_PARTITION:
-            # Skip merged tags as those cause a headache
+            # Skip merged tags
             self._tag_list = self._tag_list[:train_classes]
         elif partition == VAL_PARTITION:
-            # Skip merged tags as those cause a headache
+            # Skip merged tags
             self._tag_list = self._tag_list[train_classes:]
         for tag in self._tag_list:
             assert tag in self._imagenet_classes
