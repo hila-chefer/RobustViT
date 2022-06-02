@@ -111,5 +111,6 @@ PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagen
 * Our ViT code is based on the [pytorch-image-models](https://github.com/rwightman/pytorch-image-models) repository.
 * Our ImageNet finetuning code is based on [code from the official PyTorch repo](https://github.com/pytorch/examples/blob/main/imagenet/main.py).
 * The code to convert ObjectNet classes to ImageNet classes was taken from [the torchprune repo](https://github.com/lucaslie/torchprune/blob/b753745b773c3ed259bf819d193ce8573d89efbb/src/torchprune/torchprune/util/datasets/objectnet.py).
+* The code to convert SI-Score classes to ImageNet classes was taken from [the official implementation](https://github.com/google-research/si-score).
 
 We would like to sincerely thank the authors for their great works. 
