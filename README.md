@@ -1,5 +1,6 @@
 # RobustViT
 
+## Colab notebook to run examples of the finetuned vs the original models:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hila-chefer/RobustViT/blob/master/RobustViT.ipynb)
 
 Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161)**. This code allows to 
