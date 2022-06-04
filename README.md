@@ -132,3 +132,14 @@ PYTHONPATH=./:$PYTHONPATH python SegmentationTest/imagenet_seg_eval.py  --imagen
 * The code to convert SI-Score classes to ImageNet classes was taken from [the official implementation](https://github.com/google-research/si-score).
 
 We would like to sincerely thank the authors for their great works. 
+
+## Citing our paper
+If you make use of our work, please cite our paper:
+```
+@InProceedings{chefer2022robustvit,
+    author    = {Chefer, Hila and Schwartz, Idan and Wolf, Lior},
+    title     = {Optimizing Relevance Maps of Vision Transformers Improves Robustness},
+   journal={arXiv preprint arXiv: 2206.01161},
+   year={2021}
+}
+```
