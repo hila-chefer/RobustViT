@@ -2,7 +2,7 @@
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hila-chefer/RobustViT/blob/master/RobustViT.ipynb)
 
-Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/pdf/2206.01161.pdf)**. This code allows to 
+Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161)**. This code allows to 
 finetune the explainability maps of Vision Transformers to enhance robustness.
 
 The method employs loss functions directly to the explainability maps to ensure that the model is focused mostly on the foreground of the image:
