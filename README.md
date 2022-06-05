@@ -8,7 +8,7 @@ This code allows to  finetune the explainability maps of Vision Transformers to 
 ## Updates:
 06/05/2022 **Added a [HuggingFace Spaces demo](https://huggingface.co/spaces/Hila/RobustViT)**:
 <p align="center">
-  <img width="500" height="360" src="hf_spaces.png">
+  <img src="hf_spaces.png">
 </p>
 
 ## Method overview:
