@@ -1,11 +1,17 @@
-# RobustViT
+# Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161)**. 
+
+This code allows to  finetune the explainability maps of Vision Transformers to enhance robustness.
 
 ## HuggingFace space + Colab notebook to run examples of the finetuned vs the original models:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hila-chefer/RobustViT/blob/master/RobustViT.ipynb)[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Hila/RobustViT)
 
-Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161)**. This code allows to 
-finetune the explainability maps of Vision Transformers to enhance robustness.
+## Updates:
+06/05/2022 **Added a [HuggingFace Spaces demo](https://huggingface.co/spaces/Hila/RobustViT)**:
+<p align="center">
+  <img width="500" height="360" src="hf_spaces.png">
+</p>
 
+## Method overview:
 The method employs loss functions directly to the explainability maps to ensure that the model is focused mostly on the foreground of the image:
 <p align="center">
   <img width="500" height="400" src="teaser.png">
