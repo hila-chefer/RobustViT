@@ -146,6 +146,6 @@ If you make use of our work, please cite our paper:
     author    = {Chefer, Hila and Schwartz, Idan and Wolf, Lior},
     title     = {Optimizing Relevance Maps of Vision Transformers Improves Robustness},
    journal={arXiv preprint arXiv: 2206.01161},
-   year={2021}
+   year={2022}
 }
 ```
