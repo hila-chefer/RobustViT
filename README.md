@@ -142,10 +142,11 @@ We would like to sincerely thank the authors for their great works.
 ## Citing our paper
 If you make use of our work, please cite our paper:
 ```
-@InProceedings{chefer2022robustvit,
-    author    = {Chefer, Hila and Schwartz, Idan and Wolf, Lior},
-    title     = {Optimizing Relevance Maps of Vision Transformers Improves Robustness},
-   journal={arXiv preprint arXiv: 2206.01161},
-   year={2022}
+@misc{chefer2022robustvit,
+  url = {https://arxiv.org/abs/2206.01161},
+  author = {Chefer, Hila and Schwartz, Idan and Wolf, Lior},
+  title = {Optimizing Relevance Maps of Vision Transformers Improves Robustness},
+  publisher = {arXiv},
+  year = {2022}
 }
 ```
