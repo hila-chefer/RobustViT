@@ -27,6 +27,10 @@ These are also the weights used in our [colab notebook](https://colab.research.g
 |[ViT-B](https://drive.google.com/file/d/1vDmuvbdLbYVAqWz6yVM4vT1Wdzt8KV-g/view?usp=sharing) | Finetuned vanilla ViT base model.
 |[DeiT-B](https://drive.google.com/file/d/1DHKX_s8rVCDiX4pwnuCCZdGWsOl4SFMn/view?usp=sharing)| Finetuned DeiT base model.
 
+## Requirements
+* `pytorch==1.7`
+* `timm==0.4.12`
+
 ## Producing Segmenataion Data
 ### Using ImageNet-S
 To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https://github.com/UnsupervisedSemanticSegmentation/ImageNet-S)
