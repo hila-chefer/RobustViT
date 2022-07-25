@@ -28,7 +28,8 @@ These are also the weights used in our [colab notebook](https://colab.research.g
 |[DeiT-B](https://drive.google.com/file/d/1DHKX_s8rVCDiX4pwnuCCZdGWsOl4SFMn/view?usp=sharing)| Finetuned DeiT base model.
 
 ## Requirements
-* `pytorch==1.7`
+* `pytorch==1.7.1`
+* `torchvision==0.8.2`
 * `timm==0.4.12`
 
 ## Producing Segmenataion Data
