@@ -1,4 +1,4 @@
-# Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161)**
+# Official PyTorch implementation of **[Optimizing Relevance Maps of Vision Transformers Improves Robustness](https://arxiv.org/abs/2206.01161) [NeurIPS 2022]**
 
 This code allows to  finetune the explainability maps of Vision Transformers to enhance robustness.
 
