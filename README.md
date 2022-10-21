@@ -4,7 +4,7 @@ This code allows to  finetune the explainability maps of Vision Transformers to 
 
 ## HuggingFace space + Colab notebook to run examples of the finetuned vs the original models:
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/hila-chefer/RobustViT/blob/master/RobustViT.ipynb)[![Hugging Face Spaces](https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Spaces-blue)](https://huggingface.co/spaces/Hila/RobustViT)
-
+[![Open In YouTube](https://img.shields.io/static/v1?label=NeurIPS2022&message=5MinuteVideo&color=red)](https://www.youtube.com/watch?v=i_bY-IDyPD8)
 ## Updates:
 06/05/2022 **Added a [HuggingFace Spaces demo](https://huggingface.co/spaces/Hila/RobustViT)**:
 <p align="center">
