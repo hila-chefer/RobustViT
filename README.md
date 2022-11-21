@@ -16,7 +16,7 @@ The method employs loss functions directly to the explainability maps to ensure 
 <p align="center">
   <img width="500" height="400" src="teaser.png">
 </p>
-Using a short finetuning process with only 3 labeled examples from 500 classes, our method imrpoves robustness of ViT models across different model sizes and training techniques, even when data augmentations/ regularization are applied.
+Using a short finetuning process with only 3 labeled examples from 500 classes, our method improves robustness of ViT models across different model sizes and training techniques, even when data augmentations/ regularization are applied.
 
 ## Model zoo
 Below are links to download finetuned models for the base models of [ViT AugReg](https://arxiv.org/abs/2106.10270) (this is also the model that appears on [timm](https://github.com/rwightman/pytorch-image-models/blob/master/timm/models/vision_transformer.py)), vanilla ViT, and DeiT. 
@@ -32,7 +32,7 @@ These are also the weights used in our [colab notebook](https://colab.research.g
 * `torchvision==0.8.2`
 * `timm==0.4.12`
 
-## Producing Segmenataion Data
+## Producing Segmentation Data
 ### Using ImageNet-S
 To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https://github.com/UnsupervisedSemanticSegmentation/ImageNet-S)
 
@@ -42,11 +42,11 @@ To use the ImageNet-S labeled data, [download the `ImageNetS919` dataset](https:
     git clone https://github.com/YangtaoWANG95/TokenCut.git
     ```
 2.  Install the dependencies
-    Python 3.7, PyTorch 1.7.1 and CUDA 11.2. Please refer to the official installation. If CUDA 10.2 has been properly installed:
+    Python 3.7, PyTorch 1.7.1, and CUDA 11.2. Please refer to the official installation. If CUDA 10.2 has been properly installed:
     ```
     pip install torch==1.7.1 torchvision==0.8.2
     ```
-    Followed by
+    Followed by:
     ```
     pip install -r TokenCut/requirements.txt
     
@@ -74,9 +74,9 @@ Notes:
     * `lambda_acc=0.2`
     * `lambda_background=2`
     * `lambda_foreground=0.3`
- * For **DeiT** models, a temprature is required as follows:
-    * `temprature=0.65` for DeiT-B
-    * `temprature=0.55` for DeiT-S
+ * For **DeiT** models, a temperature is required as follows:
+    * `temperature=0.65` for DeiT-B
+    * `temperature=0.55` for DeiT-S
  * The learning rates per model are:
     * ViT-B: 3e-6
     * ViT-L: 9e-7
